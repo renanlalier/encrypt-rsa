@@ -1,0 +1,20 @@
+{
+  "name": "criptografia",
+  "version": "1.0.0",
+  "description": "Projeto criado para testar criptografia RSA utilizando biblioteca cryptico",
+  "main": "partials/index/index.html",
+  "dependencies": {
+    "angular": "^1.5.9",
+    "angular-animate": "^1.5.9",
+    "angular-aria": "^1.5.9",
+    "angular-material": "^1.1.1",
+    "angular-route": "^1.5.9",
+    "lite-server": "^2.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Renan Lalier",
+  "license": "MIT"
+}
