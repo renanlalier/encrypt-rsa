@@ -1,0 +1,2 @@
+# encrypt-rsa
+Os projetos tem como objetivo abordar o conceito de comunicação de dados criptografados utilizando chave assimétrica RSA entre duas aplicações (cliente e servidor). Neste modelo temos uma chave pública que trafega livremente entre cliente e servidor, cuja abordagem propõe encriptar dados digitados pelo usuário (lado cliente em Java Script) utilizando a chave pública provida pelo lado servidor (Java/Spring Boot), que é o único detentor da chave privada para descriptografar os dados enviados pelo usuário.
