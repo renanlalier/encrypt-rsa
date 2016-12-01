@@ -1,10 +1,8 @@
 <link href="partials/home/home.css" rel="stylesheet">
 
-<div>
-
-    <md-content class="position-input" md-theme="docs-dark" layout-align="center center" layout-gt-sm="row" layout-padding>
+    <md-content class="position-input" layout-align="center center" layout-gt-sm="row" layout-padding>
         <md-input-container>
-            <label>Texto</label>
+            <label>Nº do cartão</label>
             <input ng-model="vm.number">
         </md-input-container>
     </md-content>
@@ -12,5 +10,3 @@
     <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
         <md-button class="md-raised md-primary" ng-click="vm.encryptData()">Enviar</md-button>
     </section>
-
-</div>

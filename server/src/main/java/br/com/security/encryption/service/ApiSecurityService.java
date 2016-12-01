@@ -14,6 +14,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.security.encryption.configuration.ConfigSecurityRSA;
 
+/**
+ * 
+ * Classe responsável por prover o serviço de obtenção da chave pública 
+ * para criptografia de dados
+ *  
+ * @author Renan Lalier
+ * @since 1 de dez de 2016
+ * @version 1.0
+ *
+ */
+
 @RestController
 @RequestMapping(value = "/security")
 public class ApiSecurityService implements Serializable {

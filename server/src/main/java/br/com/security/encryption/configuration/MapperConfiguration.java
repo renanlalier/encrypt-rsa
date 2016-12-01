@@ -7,6 +7,16 @@ import org.springframework.http.converter.json.MappingJackson2HttpMessageConvert
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
+/**
+ * 
+ * Classe responsável pela configuração do converter HTTP, necessário
+ * para o tráfego da criptografia entre cliente e servidor.
+ *  
+ * @author Renan Lalier
+ * @since 1 de dez de 2016
+ * @version 1.0
+ *
+ */
 @Configuration
 public class MapperConfiguration {
 

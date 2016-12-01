@@ -1,3 +1,7 @@
+html.md-default-theme, html, body.md-default-theme, body {
+        overflow: hidden;
+    }
+
 .position-input{
   margin-top: 180px;
 }

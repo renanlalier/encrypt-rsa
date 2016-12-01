@@ -8,11 +8,24 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.SecureRandom;
 
+import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 
+ * Classe responsável pelas regras de geração do par de chaves pública e privada
+ *  
+ * @author Renan Lalier
+ * @since 1 de dez de 2016
+ * @version 1.0
+ *
+ */
+
 @Configuration
 public class ConfigSecurityRSA {
+	
+	private Logger logger = Logger.getLogger(ConfigSecurityRSA.class);
 	
 	@Bean
 	public KeyPair generateKey() throws NoSuchAlgorithmException, NoSuchProviderException {
@@ -25,8 +38,8 @@ public class ConfigSecurityRSA {
 		PrivateKey privateKey = pair.getPrivate();
 		PublicKey publicKey = pair.getPublic();
 		
-		System.out.println("Chave pública gerada: " + publicKey);
-		System.out.println("Chave privada gerada: " + privateKey);
+		logger.info("Chave pública gerada: " + publicKey);
+		logger.info("Chave privada gerada: " + privateKey);
 
 		return pair;
 
