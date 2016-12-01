@@ -1,12 +1,12 @@
 <link href="partials/home/home.css" rel="stylesheet">
 
-    <md-content class="position-input" layout-align="center center" layout-gt-sm="row" layout-padding>
-        <md-input-container>
-            <label>Nº do cartão</label>
-            <input ng-model="vm.number">
-        </md-input-container>
-    </md-content>
+<md-content class="position-input" layout-align="center center" layout-gt-sm="row" layout-padding>
+    <md-input-container>
+        <label>Nº do cartão</label>
+          <input type="text" class="input-block-level" ng-model="vm.number" payments-validate="card" payments-format="card" payments-type-model="type" ng-class="myForm.number.$card.type"/>
+    </md-input-container>
+</md-content>
 
-    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
-        <md-button class="md-raised md-primary" ng-click="vm.encryptData()">Enviar</md-button>
-    </section>
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+    <md-button class="md-raised md-primary" ng-click="vm.encryptData()">Enviar</md-button>
+</section>

@@ -14,6 +14,8 @@ function HomeController($http, apiEncryptionService) {
         apiEncryptionService.getKeyPublic(function(response) {
 
             vm.keyPublic = response;
+            console.log(vm.keyPublic.encoded);
+
             var cipher = apiEncryptionService.encryptData(vm.number, vm.keyPublic.encoded);
 
             $http({
